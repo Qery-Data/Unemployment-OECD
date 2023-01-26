@@ -14,6 +14,6 @@ oecd_url='https://stats.oecd.org/SDMX-JSON/data/MEI/AUS+AUT+BEL+CAN+CHL+COL+CRI+
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME', columns='Country', values='Value')
-df_new = df_new.round(decimals=2)
+df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns={"Euro area (19 countries)": "Euro area", "European Union â 27 countries (from 01/02/2020)": "EU27", "TÃ¼rkiye": "Türkiye"})
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
