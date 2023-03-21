@@ -2,6 +2,7 @@ from pyjstat import pyjstat
 import requests
 import os
 import json
+import numpy as np
 from datetime import datetime
 import locale
 import io
