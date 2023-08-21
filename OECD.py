@@ -7,7 +7,6 @@ from datetime import datetime
 import locale
 import io
 import pandas as pd
-import pycountry
 os.makedirs('data', exist_ok=True)
 
 #Unemployment MEI 5Y Monthly Complete
@@ -32,7 +31,7 @@ country_flag_codes = pd.DataFrame({
 })
 df_new_with_flags = df_new.reset_index().merge(country_flag_codes, on='Country').set_index('Country')
 df_new_with_flags = df_new_with_flags.dropna(subset=['2023-01'])
-rows_to_remove = ["G7", "OECD - Total", "Euro area", "EU27"]
+rows_to_remove = ["G7", "OECD - Total", "EU27"]
 df_new_with_flags = df_new_with_flags.drop(rows_to_remove, axis=0)
 brackets = pd.qcut(df_new_with_flags['2023-01'], q=6, labels=False)
 colors = ['#F3F3FE', '#DADAFD', '#C2C2FC', '#9E9EFA', '#7979F9', '#5757F7']
