@@ -1,0 +1,39 @@
+Country,Most Recent Value,Most Recent Period,Flag_Code,color
+Spain,11.6,2023-07,:es:,#5757F7
+Greece,10.8,2023-07,:gr:,#5757F7
+Costa Rica,9.6,2023-06,:cr:,#5757F7
+Türkiye,9.4,2023-07,:tr:,#5757F7
+Colombia,9.3,2023-07,:co:,#5757F7
+Chile,8.4,2023-06,:cl:,#5757F7
+Italy,7.6,2023-07,:it:,#5757F7
+Finland,7.4,2023-07,:fi:,#7979F9
+France,7.4,2023-07,:fr:,#7979F9
+Estonia,7.2,2023-07,:ee:,#7979F9
+Sweden,7.0,2023-07,:se:,#7979F9
+Latvia,6.6,2023-07,:lv:,#7979F9
+Lithuania,6.4,2023-07,:lt:,#7979F9
+Portugal,6.3,2023-07,:pt:,#9E9EFA
+Slovak Republic,5.8,2023-07,:sk:,#9E9EFA
+Denmark,5.6,2023-07,:dk:,#9E9EFA
+Austria,5.6,2023-07,:at:,#9E9EFA
+Canada,5.5,2023-08,:ca:,#9E9EFA
+Belgium,5.5,2023-07,:be:,#9E9EFA
+Luxembourg,5.2,2023-07,:lu:,#C2C2FC
+United Kingdom,4.3,2023-06,:gb:,#C2C2FC
+Switzerland,4.2,2023-Q3,:ch:,#C2C2FC
+Ireland,4.1,2023-07,:ie:,#C2C2FC
+Hungary,4.0,2023-07,:hu:,#C2C2FC
+United States,3.8,2023-08,:us:,#C2C2FC
+Australia,3.7,2023-07,:au:,#DADAFD
+Netherlands,3.6,2023-07,:nl:,#DADAFD
+New Zealand,3.6,2023-Q2,:nz:,#DADAFD
+Norway,3.5,2023-07,:no:,#DADAFD
+Slovenia,3.5,2023-07,:si:,#DADAFD
+Israel,3.4,2023-07,:il:,#DADAFD
+Iceland,3.2,2023-07,:is:,#F3F3FE
+Mexico,2.9,2023-07,:mx:,#F3F3FE
+Germany,2.9,2023-07,:de:,#F3F3FE
+Poland,2.8,2023-07,:pl:,#F3F3FE
+Czech Republic,2.7,2023-07,:cz:,#F3F3FE
+Japan,2.7,2023-07,:jp:,#F3F3FE
+Korea,2.4,2023-08,:kr:,#F3F3FE
