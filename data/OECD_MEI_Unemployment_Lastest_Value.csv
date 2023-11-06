@@ -1,39 +1,39 @@
 Country,Most Recent Value,Most Recent Period,Flag_Code,color
-Spain,11.5,2023-08,:es:,#5757F7
-Greece,10.9,2023-08,:gr:,#5757F7
-Colombia,9.5,2023-08,:co:,#5757F7
+Spain,12.0,2023-09,:es:,#5757F7
+Greece,10.0,2023-09,:gr:,#5757F7
+Colombia,9.7,2023-09,:co:,#5757F7
 Türkiye,9.2,2023-08,:tr:,#5757F7
-Costa Rica,8.8,2023-07,:cr:,#5757F7
-Chile,8.6,2023-07,:cl:,#5757F7
-Sweden,8.0,2023-08,:se:,#5757F7
-Estonia,7.6,2023-08,:ee:,#7979F9
-Finland,7.3,2023-08,:fi:,#7979F9
-Italy,7.3,2023-08,:it:,#7979F9
-France,7.3,2023-08,:fr:,#7979F9
-Latvia,6.6,2023-08,:lv:,#7979F9
-Portugal,6.2,2023-08,:pt:,#7979F9
-Lithuania,6.1,2023-08,:lt:,#9E9EFA
-Slovak Republic,5.8,2023-08,:sk:,#9E9EFA
-Canada,5.5,2023-09,:ca:,#9E9EFA
-Belgium,5.5,2023-08,:be:,#9E9EFA
-Luxembourg,5.3,2023-08,:lu:,#9E9EFA
-Austria,5.3,2023-08,:at:,#9E9EFA
-Denmark,4.4,2023-08,:dk:,#C2C2FC
+Chile,8.7,2023-08,:cl:,#5757F7
+Sweden,8.1,2023-09,:se:,#5757F7
+Costa Rica,8.1,2023-08,:cr:,#5757F7
+Italy,7.4,2023-09,:it:,#7979F9
+Estonia,7.4,2023-09,:ee:,#7979F9
+Finland,7.4,2023-09,:fi:,#7979F9
+France,7.3,2023-09,:fr:,#7979F9
+Latvia,6.6,2023-09,:lv:,#7979F9
+Portugal,6.5,2023-09,:pt:,#7979F9
+Lithuania,6.2,2023-09,:lt:,#9E9EFA
+Slovak Republic,5.8,2023-09,:sk:,#9E9EFA
+Canada,5.7,2023-10,:ca:,#9E9EFA
+Luxembourg,5.6,2023-09,:lu:,#9E9EFA
+Belgium,5.6,2023-09,:be:,#9E9EFA
+Austria,5.5,2023-09,:at:,#9E9EFA
+Denmark,4.8,2023-09,:dk:,#C2C2FC
 United Kingdom,4.3,2023-06,:gb:,#C2C2FC
-Ireland,4.1,2023-08,:ie:,#C2C2FC
-Hungary,4.0,2023-08,:hu:,#C2C2FC
+Ireland,4.2,2023-09,:ie:,#C2C2FC
 Switzerland,4.0,2023-Q2,:ch:,#C2C2FC
-United States,3.8,2023-09,:us:,#C2C2FC
-Australia,3.7,2023-08,:au:,#DADAFD
-Norway,3.6,2023-08,:no:,#DADAFD
-Netherlands,3.6,2023-08,:nl:,#DADAFD
-New Zealand,3.6,2023-Q2,:nz:,#DADAFD
-Slovenia,3.5,2023-08,:si:,#DADAFD
-Iceland,3.2,2023-07,:is:,#DADAFD
-Israel,3.1,2023-08,:il:,#F3F3FE
-Germany,3.0,2023-08,:de:,#F3F3FE
-Poland,2.8,2023-08,:pl:,#F3F3FE
-Mexico,2.8,2023-08,:mx:,#F3F3FE
-Japan,2.7,2023-08,:jp:,#F3F3FE
+United States,3.9,2023-10,:us:,#DADAFD
+New Zealand,3.9,2023-Q3,:nz:,#DADAFD
+Hungary,3.9,2023-09,:hu:,#DADAFD
+Netherlands,3.7,2023-09,:nl:,#DADAFD
+Slovenia,3.6,2023-09,:si:,#DADAFD
+Australia,3.6,2023-09,:au:,#DADAFD
+Norway,3.5,2023-09,:no:,#DADAFD
+Iceland,3.4,2023-09,:is:,#DADAFD
+Israel,3.2,2023-09,:il:,#F3F3FE
+Germany,3.0,2023-09,:de:,#F3F3FE
+Poland,2.8,2023-09,:pl:,#F3F3FE
+Mexico,2.7,2023-09,:mx:,#F3F3FE
+Czech Republic,2.7,2023-09,:cz:,#F3F3FE
 Korea,2.6,2023-09,:kr:,#F3F3FE
-Czech Republic,2.5,2023-08,:cz:,#F3F3FE
+Japan,2.6,2023-09,:jp:,#F3F3FE
