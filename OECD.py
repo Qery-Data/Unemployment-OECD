@@ -48,7 +48,7 @@ for country, row in df_new.iterrows():
 #Merge the two
 merged_df = pd.concat([df_new_most_recent_value_month, df_new_most_recent_value_qtr])
 country_flag_codes = pd.DataFrame({
-    'Country': ['Australia', 'Austria', 'Belgium', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Czech Republic', 'Denmark', 'Estonia', 'Euro area', 'EU27', 'Finland', 'France', 'G7', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Israel', 'Italy', 'Japan', 'Korea', 'Latvia', 'Lithuania', 'Luxembourg', 'Mexico', 'Netherlands', 'New Zealand', 'Norway', 'OECD - Total', 'Poland', 'Portugal', 'Slovak Republic', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Türkiye', 'United Kingdom', 'United States'],
+    'Country': ['Australia', 'Austria', 'Belgium', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Czechia', 'Denmark', 'Estonia', 'Euro area', 'EU27', 'Finland', 'France', 'G7', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Israel', 'Italy', 'Japan', 'Korea', 'Latvia', 'Lithuania', 'Luxembourg', 'Mexico', 'Netherlands', 'New Zealand', 'Norway', 'OECD - Total', 'Poland', 'Portugal', 'Slovak Republic', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Türkiye', 'United Kingdom', 'United States'],
     'Flag_Code': [':au:', ':at:', ':be:', ':ca:', ':cl:', ':co:', ':cr:', ':cz:', ':dk:', ':ee:', '', '', ':fi:', ':fr:', '', ':de:', ':gr:', ':hu:', ':is:', ':ie:', ':il:', ':it:', ':jp:', ':kr:', ':lv:', ':lt:', ':lu:', ':mx:', ':nl:',':nz:',':no:', '', ':pl:', ':pt:', ':sk:', ':si:', ':es:', ':se:', ':ch:',':tr:', ':gb:', ':us:']
 })
 merged_df_with_flags = merged_df.reset_index().merge(country_flag_codes, on='Country').set_index('Country')
