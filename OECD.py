@@ -97,7 +97,7 @@ df_new['Change last 12 months'] = df_new['Change last 12 months'].astype('float'
 df_new = df_new.drop(["G7", "OECD - Total", "EU27","Euro area"], axis=0)
 df_new = df_new.round(decimals=1)
 country_flag_codes = pd.DataFrame({
-    'Country': ['Australia', 'Austria', 'Belgium', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Czech Republic', 'Denmark', 'Estonia', 'Euro area', 'EU27', 'Finland', 'France', 'G7', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Israel', 'Italy', 'Japan', 'Korea', 'Latvia', 'Lithuania', 'Luxembourg', 'Mexico', 'Netherlands', 'New Zealand', 'Norway', 'OECD - Total', 'Poland', 'Portugal', 'Slovak Republic', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Türkiye', 'United Kingdom', 'United States'],
+    'Country': ['Australia', 'Austria', 'Belgium', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Czechia', 'Denmark', 'Estonia', 'Euro area', 'EU27', 'Finland', 'France', 'G7', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Israel', 'Italy', 'Japan', 'Korea', 'Latvia', 'Lithuania', 'Luxembourg', 'Mexico', 'Netherlands', 'New Zealand', 'Norway', 'OECD - Total', 'Poland', 'Portugal', 'Slovak Republic', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Türkiye', 'United Kingdom', 'United States'],
     'Flag_Code': [':au:', ':at:', ':be:', ':ca:', ':cl:', ':co:', ':cr:', ':cz:', ':dk:', ':ee:', '', '', ':fi:', ':fr:', '', ':de:', ':gr:', ':hu:', ':is:', ':ie:', ':il:', ':it:', ':jp:', ':kr:', ':lv:', ':lt:', ':lu:', ':mx:', ':nl:',':nz:',':no:', '', ':pl:', ':pt:', ':sk:', ':si:', ':es:', ':se:', ':ch:',':tr:', ':gb:', ':us:']
 })
 df_new_with_flags = df_new.reset_index().merge(country_flag_codes, on='Country').set_index('Country')
