@@ -42,6 +42,7 @@ rename_columns = {
     "MEX": "Mexico",
     "NLD": "Netherlands",
     "NOR": "Norway",
+    "NZL": "New Zealand",
     "POL": "Poland",
     "PRT": "Portugal",
     "SVK": "Slovak Republic",
