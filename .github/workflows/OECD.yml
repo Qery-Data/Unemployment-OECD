@@ -5,7 +5,7 @@ on:
     - cron: "5 9 * * 1"
 jobs:
   build-and-deploy:
-    runs-on: Ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get working copy
         uses: actions/checkout@main
