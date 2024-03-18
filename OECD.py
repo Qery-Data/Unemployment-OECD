@@ -16,6 +16,7 @@ rename_columns = {
     "AUT": "Austria",
     "BEL": "Belgium",
     "CAN": "Canada",
+    "CHE": "Switerland",
     "CHL": "Chile",
     "COL": "Colombia",
     "CRI": "Costa Rica",
@@ -56,6 +57,7 @@ rename_columns_to_flags = {
     "AUT": ":at:",
     "BEL": ":be:",
     "CAN": ":ca:",
+    "CHE": ":ch:",
     "CHL": ":cl:",
     "COL": ":co:",
     "CRI": ":cr:",
@@ -102,7 +104,7 @@ df_new = df_new.rename(columns=rename_columns)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
@@ -129,7 +131,7 @@ for country, row in df_new.iterrows():
     df_new_most_recent_value_month.loc[country] = [most_recent_value, most_recent_period]
 
 #Quarterly data latest value (NZL+CHE)
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='REF_AREA', columns='TIME_PERIOD', values='OBS_VALUE')
