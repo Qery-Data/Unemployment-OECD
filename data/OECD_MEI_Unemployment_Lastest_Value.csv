@@ -1,39 +1,43 @@
-Country,Most Recent Value,Most Recent Period,Flag_Code,color
-Spain,11.7,2023-12,:es:,#5757F7
-Colombia,10.8,2023-12,:co:,#5757F7
-Greece,9.2,2023-12,:gr:,#5757F7
-Türkiye,9.0,2023-11,:tr:,#5757F7
-Chile,9.0,2023-10,:cl:,#5757F7
-Sweden,8.2,2023-12,:se:,#5757F7
-Finland,7.5,2023-12,:fi:,#5757F7
-Costa Rica,7.3,2023-11,:cr:,#7979F9
-France,7.3,2023-12,:fr:,#7979F9
-Italy,7.2,2023-12,:it:,#7979F9
-Latvia,6.6,2023-12,:lv:,#7979F9
-Portugal,6.6,2023-12,:pt:,#7979F9
-Lithuania,6.3,2023-12,:lt:,#9E9EFA
-Estonia,6.3,2023-12,:ee:,#9E9EFA
-Slovak Republic,5.8,2023-12,:sk:,#9E9EFA
-Canada,5.8,2023-12,:ca:,#9E9EFA
-Belgium,5.7,2023-12,:be:,#9E9EFA
-Austria,5.6,2023-12,:at:,#9E9EFA
-Luxembourg,5.5,2023-12,:lu:,#9E9EFA
-Denmark,5.0,2023-12,:dk:,#C2C2FC
-Ireland,4.9,2023-12,:ie:,#C2C2FC
-Hungary,4.2,2023-12,:hu:,#C2C2FC
-United Kingdom,4.2,2023-10,:gb:,#C2C2FC
-Slovenia,4.2,2023-12,:si:,#C2C2FC
-Switzerland,4.1,2023-Q3,:ch:,#C2C2FC
-New Zealand,3.9,2023-Q3,:nz:,#DADAFD
-Australia,3.9,2023-12,:au:,#DADAFD
-Iceland,3.9,2023-12,:is:,#DADAFD
-United States,3.7,2024-01,:us:,#DADAFD
-Netherlands,3.6,2023-12,:nl:,#DADAFD
-Norway,3.5,2023-12,:no:,#DADAFD
-Korea,3.3,2023-12,:kr:,#F3F3FE
-Germany,3.1,2023-12,:de:,#F3F3FE
-Mexico,2.8,2023-12,:mx:,#F3F3FE
-Israel,2.8,2023-11,:il:,#F3F3FE
-Czechia,2.8,2023-12,:cz:,#F3F3FE
-Poland,2.7,2023-12,:pl:,#F3F3FE
-Japan,2.4,2023-12,:jp:,#F3F3FE
+Country,Most Recent Value,Most Recent Period,color
+Spain,11.6,2024-01,#5757F7
+Colombia,10.4,2024-01,#5757F7
+Greece,10.4,2024-01,#5757F7
+Türkiye,9.1,2024-01,#5757F7
+Chile,8.9,2023-12,#5757F7
+Sweden,8.2,2024-01,#5757F7
+Costa Rica,8.0,2023-12,#5757F7
+Finland,7.7,2024-01,#7979F9
+Lithuania,7.7,2024-01,#7979F9
+France,7.5,2024-01,#7979F9
+Italy,7.2,2024-01,#7979F9
+Estonia,7.0,2024-01,#7979F9
+Latvia,6.9,2024-01,#7979F9
+Portugal,6.5,2024-01,#7979F9
+Euro area,6.4,2024-01,#9E9EFA
+EU27,6.0,2024-01,#9E9EFA
+Canada,5.8,2024-02,#9E9EFA
+Luxembourg,5.6,2024-01,#9E9EFA
+Slovak Republic,5.5,2024-01,#9E9EFA
+Belgium,5.5,2024-01,#9E9EFA
+Denmark,5.3,2024-01,#9E9EFA
+Austria,5.0,2024-01,#C2C2FC
+OECD,4.8,2024-01,#C2C2FC
+Norway,4.5,2024-01,#C2C2FC
+Ireland,4.5,2024-01,#C2C2FC
+Hungary,4.3,2024-01,#C2C2FC
+G7,4.1,2024-01,#DADAFD
+Switerland,4.1,2023-Q3,#DADAFD
+Australia,4.1,2024-01,#DADAFD
+NZL,4.0,2023-Q4,#DADAFD
+United Kingdom,3.9,2023-12,#DADAFD
+United States,3.9,2024-02,#DADAFD
+Iceland,3.9,2023-12,#DADAFD
+Netherlands,3.6,2024-01,#DADAFD
+Slovenia,3.3,2024-01,#DADAFD
+Israel,3.2,2024-01,#F3F3FE
+Germany,3.1,2024-01,#F3F3FE
+Czechia,3.0,2024-01,#F3F3FE
+Poland,2.9,2024-01,#F3F3FE
+Mexico,2.7,2024-01,#F3F3FE
+Korea,2.6,2024-02,#F3F3FE
+Japan,2.4,2024-01,#F3F3FE
