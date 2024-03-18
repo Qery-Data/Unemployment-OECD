@@ -101,6 +101,7 @@ df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
 df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns=rename_columns)
+df_new.index.rename("TIME", inplace=True)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
@@ -110,6 +111,7 @@ df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
 df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns=rename_columns)
+df_new.index.rename("TIME", inplace=True)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y_Q.csv', index=True)
 
 #Monthly data latest Value
@@ -149,6 +151,7 @@ for country, row in df_new.iterrows():
 #Merge the two
 merged_df = pd.concat([df_new_most_recent_value_month, df_new_most_recent_value_qtr])
 merged_df = merged_df.rename(index=rename_columns)
+merged_df.index.rename("Country", inplace=True)
 merged_df.sort_values(by='Most Recent Value', ascending=False, inplace=True)
 merged_df['Most Recent Value'] = pd.to_numeric(merged_df['Most Recent Value'], errors='coerce')
 merged_df.dropna(subset=['Most Recent Value'], inplace=True)
@@ -190,6 +193,7 @@ for index, row in df_new.iterrows():
 df_new['Change previous month'] = df_new['Change previous month'].astype('float')
 df_new['Change last 12 months'] = df_new['Change last 12 months'].astype('float')
 df_new = df_new.rename(index=rename_columns)
+df_new.index.rename("Country", inplace=True)
 df_new = df_new.drop(["G7", "OECD", "EU27","Euro area"], axis=0)
 df_new = df_new.round(decimals=1)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_12M.csv', index=True)
