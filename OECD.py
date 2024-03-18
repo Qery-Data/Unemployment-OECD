@@ -106,7 +106,7 @@ df_new.index.rename("TIME", inplace=True)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/OECD+CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
