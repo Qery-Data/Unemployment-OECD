@@ -2,9 +2,9 @@ Country,Most Recent Value,Most Recent Period,color
 Spain,11.7,2024-03,#5757F7
 Colombia,11.2,2024-03,#5757F7
 Greece,10.2,2024-03,#5757F7
-Türkiye,8.7,2024-02,#5757F7
 Sweden,8.6,2024-03,#5757F7
 Chile,8.6,2024-02,#5757F7
+Türkiye,8.6,2024-03,#5757F7
 Finland,8.4,2024-03,#5757F7
 Costa Rica,7.8,2024-02,#7979F9
 Estonia,7.8,2024-03,#7979F9
@@ -15,7 +15,7 @@ Denmark,6.8,2024-03,#7979F9
 Latvia,6.8,2024-03,#7979F9
 Portugal,6.5,2024-03,#9E9EFA
 Euro area,6.5,2024-03,#9E9EFA
-Canada,6.1,2024-03,#9E9EFA
+Canada,6.1,2024-04,#9E9EFA
 EU27,6.0,2024-03,#9E9EFA
 Luxembourg,5.6,2024-03,#9E9EFA
 Belgium,5.5,2024-03,#9E9EFA
@@ -24,8 +24,8 @@ OECD,4.9,2024-03,#C2C2FC
 Austria,4.9,2024-03,#C2C2FC
 Ireland,4.3,2024-03,#C2C2FC
 Hungary,4.3,2024-03,#C2C2FC
+United Kingdom,4.3,2024-02,#C2C2FC
 New Zealand,4.3,2024-Q1,#C2C2FC
-United Kingdom,4.2,2024-01,#C2C2FC
 G7,4.2,2024-03,#C2C2FC
 Switerland,4.0,2023-Q4,#DADAFD
 Norway,3.9,2024-03,#DADAFD
