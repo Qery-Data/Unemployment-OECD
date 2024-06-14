@@ -96,7 +96,7 @@ rename_columns_to_flags = {
 }
 
 #Monthly data latest Value
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/.UNE_LF_M...Y._T.Y_GE15..M?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC/.UNE_LF_M...Y._T.Y_GE15..M?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
@@ -106,7 +106,7 @@ df_new.index.rename("TIME", inplace=True)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/OECD+CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC/OECD+CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
@@ -116,7 +116,7 @@ df_new.index.rename("TIME", inplace=True)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y_Q.csv', index=True)
 
 #Monthly data latest Value
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/.UNE_LF_M...Y._T.Y_GE15..M?startPeriod=2023-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC/.UNE_LF_M...Y._T.Y_GE15..M?startPeriod=2023-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='REF_AREA', columns='TIME_PERIOD', values='OBS_VALUE')
@@ -134,7 +134,7 @@ for country, row in df_new.iterrows():
     df_new_most_recent_value_month.loc[country] = [most_recent_value, most_recent_period]
 
 #Quarterly data latest value (NZL+CHE)
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC/CHE+NZL.UNE_LF_M...Y._T.Y_GE15..Q?startPeriod=2018-01'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='REF_AREA', columns='TIME_PERIOD', values='OBS_VALUE')
@@ -165,7 +165,7 @@ merged_df['color'] = pd.qcut(
 merged_df.to_csv('data/OECD_MEI_Unemployment_Lastest_Value.csv', index=True)
 
 # OECD Unemployment Rate Last 12 months and change
-oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC,1.0/.UNE_LF_M...Y._T.Y_GE15..M?lastNObservations=13'
+oecd_url='https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_INDIC/.UNE_LF_M...Y._T.Y_GE15..M?lastNObservations=13'
 result = requests.get(oecd_url, headers={'Accept': 'text/csv'})
 df=pd.read_csv(io.StringIO(result.text))
 df_new = df.pivot(index='REF_AREA', columns='TIME_PERIOD', values='OBS_VALUE')
