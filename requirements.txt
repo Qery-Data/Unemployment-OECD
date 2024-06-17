@@ -1,3 +1,4 @@
 pyjstat
-pandas
+pandas == 2.2.2
+numpy == 1.23.0
 pycountry
