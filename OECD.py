@@ -103,6 +103,7 @@ df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
 df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns=rename_columns)
 df_new.index.rename("TIME", inplace=True)
+df_new = df_new.drop(["BGR"], axis=0)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
@@ -195,7 +196,7 @@ df_new['Change previous month'] = df_new['Change previous month'].astype('float'
 df_new['Change last 12 months'] = df_new['Change last 12 months'].astype('float')
 df_new = df_new.rename(index=rename_columns)
 df_new.index.rename("Country", inplace=True)
-df_new = df_new.drop(["G7", "OECD", "EU27","Euro area"], axis=0)
+df_new = df_new.drop(["G7", "OECD", "EU27","Euro area","BGR"], axis=0)
 df_new = df_new.round(decimals=1)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_12M.csv', index=True)
 
