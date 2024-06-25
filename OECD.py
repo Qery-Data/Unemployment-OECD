@@ -103,7 +103,7 @@ df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
 df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns=rename_columns)
 df_new.index.rename("TIME", inplace=True)
-df_new = df_new.drop(["BGR"])
+df_new = df_new.drop(["BGR"],axis=1)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
