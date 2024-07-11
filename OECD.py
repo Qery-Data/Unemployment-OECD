@@ -154,6 +154,7 @@ for country, row in df_new.iterrows():
 merged_df = pd.concat([df_new_most_recent_value_month, df_new_most_recent_value_qtr])
 merged_df = merged_df.rename(index=rename_columns)
 merged_df.index.rename("Country", inplace=True)
+merged_df = df_new.drop(["BGR"],axis=1)
 merged_df.sort_values(by='Most Recent Value', ascending=False, inplace=True)
 merged_df['Most Recent Value'] = pd.to_numeric(merged_df['Most Recent Value'], errors='coerce')
 merged_df.dropna(subset=['Most Recent Value'], inplace=True)
