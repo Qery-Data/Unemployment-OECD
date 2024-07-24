@@ -157,7 +157,7 @@ merged_df.index.rename("Country", inplace=True)
 merged_df.sort_values(by='Most Recent Value', ascending=False, inplace=True)
 merged_df['Most Recent Value'] = pd.to_numeric(merged_df['Most Recent Value'], errors='coerce')
 merged_df.dropna(subset=['Most Recent Value'], inplace=True)
-merged_df = merged_df.drop("BGR")
+merged_df = merged_df.drop(["BGR","HRV"])
 colors = ['#F3F3FE', '#DADAFD', '#C2C2FC', '#9E9EFA', '#7979F9', '#5757F7']
 merged_df['color'] = pd.qcut(
     merged_df['Most Recent Value'], 
@@ -197,7 +197,7 @@ df_new['Change previous month'] = df_new['Change previous month'].astype('float'
 df_new['Change last 12 months'] = df_new['Change last 12 months'].astype('float')
 df_new = df_new.rename(index=rename_columns)
 df_new.index.rename("Country", inplace=True)
-df_new = df_new.drop(["G7", "OECD", "EU27","Euro area","BGR"], axis=0)
+df_new = df_new.drop(["G7", "OECD", "EU27","Euro area","BGR","HRV"], axis=0)
 df_new = df_new.round(decimals=1)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_12M.csv', index=True)
 
