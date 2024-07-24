@@ -103,7 +103,7 @@ df_new = df.pivot(index='TIME_PERIOD', columns='REF_AREA', values='OBS_VALUE')
 df_new = df_new.round(decimals=1)
 df_new = df_new.rename(columns=rename_columns)
 df_new.index.rename("TIME", inplace=True)
-df_new = df_new.drop(["BGR"],axis=1)
+df_new = df_new.drop(["BGR","HRV"],axis=1)
 df_new.to_csv('data/OECD_MEI_Unemployment_Last_5Y.csv', index=True)
 
 #Quarterly data latest value
@@ -157,7 +157,7 @@ merged_df.index.rename("Country", inplace=True)
 merged_df.sort_values(by='Most Recent Value', ascending=False, inplace=True)
 merged_df['Most Recent Value'] = pd.to_numeric(merged_df['Most Recent Value'], errors='coerce')
 merged_df.dropna(subset=['Most Recent Value'], inplace=True)
-merged_df = merged_df.drop("BGR")
+merged_df = merged_df.drop("BGR","HRV")
 colors = ['#F3F3FE', '#DADAFD', '#C2C2FC', '#9E9EFA', '#7979F9', '#5757F7']
 merged_df['color'] = pd.qcut(
     merged_df['Most Recent Value'], 
