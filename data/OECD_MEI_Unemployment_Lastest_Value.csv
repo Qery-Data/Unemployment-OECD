@@ -2,15 +2,15 @@ Country,Most Recent Value,Most Recent Period,color
 Spain,11.2,2024-09,#5757F7
 Colombia,9.7,2024-09,#5757F7
 Greece,9.3,2024-09,#5757F7
+Türkiye,8.6,2024-09,#5757F7
 Sweden,8.6,2024-09,#5757F7
 Finland,8.6,2024-09,#5757F7
-Türkiye,8.5,2024-08,#5757F7
 Chile,8.5,2024-08,#5757F7
 Lithuania,7.9,2024-09,#7979F9
 Estonia,7.6,2024-09,#7979F9
 France,7.6,2024-09,#7979F9
 Latvia,6.9,2024-09,#7979F9
-Costa Rica,6.7,2024-07,#7979F9
+Costa Rica,6.6,2024-08,#7979F9
 Canada,6.5,2024-10,#7979F9
 Denmark,6.4,2024-09,#9E9EFA
 Portugal,6.4,2024-09,#9E9EFA
@@ -25,12 +25,12 @@ OECD,4.9,2024-09,#C2C2FC
 New Zealand,4.8,2024-Q3,#C2C2FC
 Hungary,4.5,2024-09,#C2C2FC
 Ireland,4.3,2024-09,#C2C2FC
-Switerland,4.2,2024-Q2,#C2C2FC
-G7,4.2,2024-09,#C2C2FC
+United Kingdom,4.3,2024-08,#C2C2FC
+G7,4.3,2024-09,#C2C2FC
+Switerland,4.2,2024-Q2,#DADAFD
 Australia,4.1,2024-09,#DADAFD
 United States,4.1,2024-10,#DADAFD
 Norway,4.0,2024-09,#DADAFD
-United Kingdom,4.0,2024-07,#DADAFD
 Netherlands,3.7,2024-09,#DADAFD
 Germany,3.5,2024-09,#DADAFD
 Slovenia,3.4,2024-09,#DADAFD
